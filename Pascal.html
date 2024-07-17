@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+                var N = parseInt(prompt("Combien de nombres voulez vous entrer?"));
+                document.write(N);
+                while(N<10 || N>50){
+                    N=parseInt(prompt("Combien de nombres voulez vous entrez?"));
+                    document.write(N)
+                }
+                var T= [N];
+                var max=0;
+                for(var i=0; i<N ;i++){
+                    T[i]= parseInt(prompt("Entrez une valeur svp"));
+                    if(T[i]>max){ max=T[i];}
+                }
+                var min=max;
+                for(var j=0; j<N; j++){
+                    if(T[j]<min){ min=T[j];}
+                }
+                document.write("max="+max);
+                document.write("min="+min);
+</script>
+</body>
+</html>
+    

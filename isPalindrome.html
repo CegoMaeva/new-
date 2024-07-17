@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var N=parseInt(prompt("Combien de lettres a le mot?"));
+        document.write(N);
+        var T=[N];
+   for(var i=0; i<N ;i++){
+    T[i]= prompt("Entrez une LETTRE  svp");
+}
+var c=N-1;
+var j=0
+var a="true";
+while(a=="true" && j<c) 
+{
+    if(T[j]=T[c]){ a="true"; 
+        j++; c--;
+    }
+    else{ a="false";}
+}
+if(a=="true"){document.write("Le mot est un palyndrome");}
+else{document.write("Ce mot n'est pas un palyndrome");
+
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id1">Institut Teccart</h1>
+    <h1 id="monID"> Bonsoir a tous <a href="www.google.com">Lien vers google</a> </h1>
+    <p id="monID"> Bonsoir a tous <a href="www.google.com">Lien vers google</a> </p>
+    <h1>dec aec</h1>
+    <p>Informatique</p>
+        <p>Montreal</p>
+        <p>Laval</p>
+        <p>Rimouski</p>
+        <p>Levis</p>
+        <p>Ottawa</p>
+        <p class="dec">Douala</p>
+        <p class="dec">Yaounde</p>
+        <p class="dec">Boya</p>
+        
+    <script>
+        let f = document.querySelectorAll(".dec")
+        let(f[3].textContent)
+        let b = document.querySelector("h1").innerHTML
+        alert(b)
+        let e = document.querySelector("#id1").innerHTML //Renvoie toujours le premier element
+        alert(e)
+        let d= document.getElementsByClassName("dec")
+        for(i=0;i<d.length;i++){
+            alert(d[i].innerHTML)
+        }
+        let c =document.getElementsByTagName("p");
+        alert(c[3].innerHTML);
+        for(i=0;i<c.length;i++){
+            alert(c[i].innerHTML)
+        }
+        let a=document.getElementById("monID");
+        alert(a.innerHTML)
+        document.getElementById("id1").innerHTML="<marquee>Exam final</marquee>"
+        
+    </script>
+</body>
+</html> 

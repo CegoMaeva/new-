@@ -1,0 +1,84 @@
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        eleve = new Object();
+        eleve.prenom="Justin";
+        eleve.nom="Trudeau";
+        eleve.age=20;
+        eleve.Maeva=function(){
+            return this.prenom+" "+this.nom+" "+this.age
+        }
+        alert(eleve.nom)
+        alert(eleve.Maeva())
+        class Etudiant{
+            constructor(p,n,a){
+                this.prenom= p;
+                this.nom= n;
+                this.age= a;
+            }
+            info(){
+                document.write("Bonsoir a tous");
+            }
+            aa= function(){
+                return this.prenom+" "+this.nom+" "+this.age
+            }
+        }
+        e1= new Etudiant("Mouna","Salma",18);
+        alert(e1.nom)
+        alert(e1.aa())
+        function personne(p,n,a){
+            this.prenom=p;
+            this.nom=n;
+            this.age=a;
+            this.infos =function(){
+                return this.prenom+" "+this.nom+" "+this.age;
+            }
+        }
+        p1= new personne("Abdou","Tine",16);
+        p2= new personne("Biny","Hajar",20);
+        p2= new personne("Zahra","Ahmed",9);
+        alert(p1.infos());
+
+        let objet1={
+            prenom:"Ibrahima",
+            nom : "Sagna",
+            age: 20,
+            info: function(){
+                return this.prenom+" "+this.nom+" "+this.age
+            },
+            tab: ["messi","ronaldo","ETO'O","Drogba"],
+            adresse:{
+                rue:"Drolet",
+                ville:"Montréal",
+                autreobjet:{
+                tel:"0001114595"
+            } 
+          }
+            
+        }
+        alert(objet1.adresse.ville)
+        objet1.tab.push("Ntolo")
+        objet1.tab[1]="Ngannou"
+        document.write(objet1.tab)
+        console.log(objet1.prenom)
+        document.write(objet1.info())
+        let nom="Abdoulaye";
+        let prenom="Tine";
+            document.write('votre nom est $(nom) votre prenom est $(prenom)');
+        const c=862;
+        alert(c);
+        a=100;
+        alert(a);
+        let tab=["Barry","Mouna","Hajar"];
+        tab.unshift("Junior");
+        alert(tab);
+        
+    </script>
+</body>
+</html>

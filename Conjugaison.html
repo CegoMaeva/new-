@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var verbe = prompt("entrez le verbe a conjuguer ...");
+
+document.write("Je "+" ");
+for (var n=1;n<=6;n++)
+    {
+        for (var i =0;i<verbe.length-2;i++)
+        {
+            var radical=verbe[i];
+            document.write(radical);
+            
+                    
+                
+        }
+        switch (n)
+                    {
+                        case 1:
+                            document.write("e"+"<br>"+"Tu "+" ");
+                            break;
+
+                        case 2:
+                        document.write("es"+"<br>"+ "Il "+" ");
+                            break;
+                        case 3:
+                        document.write("e"+"<br>"+" Nous"+" ");
+                            break;
+                        case 4:
+                            document.write("ons"+"<br>" +"Vous "+" ");
+                            break;
+                        case 5:
+                            document.write("ez"+"<br>"+ "Ils/Elles"+" ");
+                            break;
+                        case 6:
+                            document.write("ent");
+                            break;
+                        default:
+                            document.write("Entrez un verbe regulier");
+
+                    }
+    }
+    </script>
+</body>
+</html>
+
+    
